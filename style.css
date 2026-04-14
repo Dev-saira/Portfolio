@@ -50,7 +50,7 @@ nav a:hover {
 .fa-solid {
   color: white;
   font-size: 1.2em;
-  display: none;
+  display: none !important;
 }
 #hero{
       background-color: #ffffff;
@@ -220,7 +220,7 @@ header h1 {
 .fa-solid {
   color: white;
   font-size: 1.2em;
-  display: block;
+  display: block !important;
 }
 section {
     padding: 1.1rem;
