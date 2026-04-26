@@ -26,6 +26,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="theme-toggle"><i class="fa-regular fa-moon"></i> </button>
       </nav>
       <i class="fa-solid fa-bars"></i>
   
@@ -82,13 +83,12 @@
         </article>
 
         <article>
-          <h3>Project 2 Chicken Biryani Recipe</h3>
+          <h3>Project 2 Images Gallary</h3>
           <p>
-            A recipe page with ingredients, instructions, and a nutrition facts
-            table
+           Creating image gallary with the help of grid and flexbox and uses concepts of overflow ,clip-path and horizontal scroll bar
           </p>
-          <a href="https://github.com/Dev-saira/recipe-page" target="_blank"
-            >Link For Recipe Page</a
+          <a href="https://github.com/Dev-saira/css-images-gallary.git" target="_blank"
+            >Link Image Gallary</a
           >
         </article>
 
@@ -106,14 +106,31 @@
         </article>
 
         <article>
-          <h3>Project 4 Student Feedback Form</h3>
+          <h3>Project 4 Form Styling</h3>
           <p>
             A complete HTML form with all input types, fieldset, labels,
             validation, and a submit button.
           </p>
-          <a href="https://github.com/Dev-saira/feedback-form" target="_blank"
+          <a href="https://github.com/Dev-saira/form-styling.git" target="_blank"
             >Link for Feedback Form</a
           >
+        </article>
+
+        <article>
+          <h3>Project 5 Grid Magazine Layout</h3>
+          <p>Created a magazine page with the help of css gride concept.</p>
+          <a href="https://github.com/Dev-saira/grid-magazine-layout.git" target="_blank">Link for grid magazine layout</a>
+        </article>
+
+        <article>
+          <h3>Project 6 Mini Tailwind CSS</h3>
+          <p>Created css utility classes which is reusable in any other website.</p>
+          <a href="https://github.com/Dev-saira/css-utlity-classes.git">Link For Mini Tailwind CSS</a>
+        </article>
+        <article>
+          <h3>Project 7 CSS Profile Card</h3>
+          <p>CSS profile card containes the image along with the detail of the person.</p>
+          <a href="https://github.com/Dev-saira/css-card-practice.git" target="_blank">Link For Profile Card</a>
         </article>
       </section>
       <section id="contact">
@@ -140,5 +157,12 @@
     <footer>
       <p>&copy; 2026 Saira. All rights reserved.</p>
     </footer>
+    <script>
+    document.getElementById('theme-toggle').addEventListener('click', function() {
+        document.documentElement.getAttribute('data-theme') === 'dark'
+            ? document.documentElement.setAttribute('data-theme', 'light')
+            : document.documentElement.setAttribute('data-theme', 'dark');
+    });
+</script>
   </body>
 </html>

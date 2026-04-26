@@ -1,6 +1,6 @@
 :root {
   --dark-bg-color: #1a1a2e;
-  --header-bg: #1a1a2e;
+  --header-bg: #0d0d1a;
   --footer-bg: #1a1a2e;
   --light-bg-color: #f0f4f8;
   --white-bg: #ffffff;
@@ -10,7 +10,7 @@
   --blockquote-color: #888888;
   --footer-text: #aaaaaa;
   --nav-links-color: #cccccc;
-  --accent-color: #00b4d8;
+  --accent-color:#0090b0;
   --article-border: #e0e0e0;
   --badge-bg-color: #e8f4fd;
 
@@ -73,7 +73,10 @@ header h1 {
   font-size: 22px;
   font-weight: 600;
 }
-
+nav {
+  display: flex;
+  gap: 20px;
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -111,6 +114,17 @@ nav a:hover {
   font-weight: 700;
   color: var(--dark-bg-color);
   margin-bottom: 8px;
+  animation: fade 2s ease 1;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #hero h3 {
@@ -118,6 +132,7 @@ nav a:hover {
   font-weight: 400;
   color: var(--accent-color);
   margin-bottom: 24px;
+  animation: fade 2s ease 0.3s 1 both;
 }
 
 #hero p {
@@ -172,7 +187,15 @@ section h2 {
   font-size: 0.9rem;
   font-weight: 500;
   border: 1px solid var(--accent-color);
+    animation: fade 0.5s ease both;
 }
+#skills li:nth-child(1) { animation-delay: 0.1s; }
+#skills li:nth-child(2) { animation-delay: 0.2s; }
+#skills li:nth-child(3) { animation-delay: 0.3s; }
+#skills li:nth-child(4) { animation-delay: 0.4s; }
+#skills li:nth-child(5) { animation-delay: 0.5s; }
+#skills li:nth-child(6) { animation-delay: 0.6s; }
+#skills li:nth-child(7) { animation-delay: 0.7s; }
 
 #projects {
   display: grid;
@@ -263,7 +286,7 @@ footer {
 
 @media (max-width:768px) {
   header {
-    background-color: var(--dark-bg-color);
+    /* background-color: var(--dark-bg-color); */
     padding: 1rem 1.2rem;
     position: sticky;
     top: 0;
@@ -272,7 +295,6 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-
   nav ul {
     flex-direction: column;
     gap: 10px;
